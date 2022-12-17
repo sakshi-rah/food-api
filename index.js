@@ -6,20 +6,20 @@ app.use(express.json());
 
 const db = [{
     id: 1,
-    title: 'Idli',
-    price: 15,
+    title: 'gubaljamun',
+    price: 60,
     category: 'breakfast'
 },
 {
     id: 2,
-    title: 'Dosa',
+    title: 'thokla',
     price: 20,
     category: 'breakfast'
 },
 {
     id: 3,
-    title: 'Biryani',
-    price: 100,
+    title: 'masala bhat',
+    price: 80,
     category: 'lunch'
 }]
 
@@ -103,6 +103,7 @@ app.get('/delete-food-item-by-id', (req, res) => {
         message: 'Food item not found'
     })
 })
+
 
 
 
