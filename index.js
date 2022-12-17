@@ -104,7 +104,21 @@ app.get('/delete-food-item-by-id', (req, res) => {
     })
 })
 
+app.get('/Food-item-by-category',(req,res)=>{
+    const category=req.query.category
 
+    const temp=[]
+    db.forEach((item)=>{
+        if(item.category === category){
+            temp.push(item)
+        }
+    })
+    res.json({
+        success:true,
+        data:temp,
+        message:`items for category ${category} fetched successfully`
+    })
+})
 
 
 
