@@ -15,7 +15,8 @@
 }
 .button-container button{
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 20px;
+    font-size: 18px;
     border: none;
     font-weight: bold;
 }
